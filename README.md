@@ -71,7 +71,7 @@ Merci de consulter [CONTRIBUTING.md](CONTRIBUTING.md) avant toute contribution.
 
 ## Licence
 
-Projet sous licence MIT.
+Projet sous licence GPLv3.
 
 ---
 
