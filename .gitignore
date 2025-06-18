@@ -1,0 +1,90 @@
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+package-lock.json
+
+# Logs
+logs/
+*.log
+*.log.*
+log.txt
+
+# IDE / Éditeurs
+.vscode/
+.idea/
+*.swp
+*.swo
+*.swn
+*.bak
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Build / Cache
+dist/
+build/
+out/
+.cache/
+.next/
+coverage/
+.eslintcache
+*.tsbuildinfo
+vite.config.ts.backup
+
+# Env / Secrets
+.env
+.env.*
+*.env.local
+*.env.production
+*.env.development
+
+# Base de données
+*.sqlite
+*.sqlite-journal
+*.db
+*.db-journal
+
+# Prisma
+prisma/dev.db
+prisma/*.sqlite
+prisma/migrations/
+
+# API / Back temporaires
+src/server/**/*.temp.*
+src/api/**/*.temp.*
+
+# Public auto-généré
+/public/assets/
+public/build/
+
+# Markdown previews temporaires
+src/markdown/.preview-cache/
+
+# Tauri / Electron (si utilisé plus tard)
+src-tauri/target/
+src-tauri/.cargo-lock
+src-tauri/Cargo.lock
+src-tauri/Cargo.toml
+
+# Tests
+coverage/
+*.test.ts
+*.test.tsx
+__tests__/
+__mocks__/
+
+# Svelte / React Native cache (juste au cas où)
+.svelte-kit/
+.expo/
+.expo-shared/
+
+# Others
+*.orig
+*.rej
+*.snap
+
+node_modules

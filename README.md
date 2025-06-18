@@ -32,7 +32,7 @@ AuroraCMS est un système de gestion de contenu (CMS) moderne, modulaire et séc
 ## Installation rapide
 
 1. Cloner le repo  
-   `git clone https://github.com/votre-utilisateur/auroracms.git`
+   `git clone https://github.com/vava62600/auroracms.git`
 
 2. Copier et configurer `.env`  
    `cp .env.example .env` puis modifier selon vos paramètres
@@ -41,12 +41,12 @@ AuroraCMS est un système de gestion de contenu (CMS) moderne, modulaire et séc
    `cargo build --release` puis `./target/release/auroracms-backend`
 
 4. Installer et lancer le frontend  
-
-cd frontend
-npm install
-npm run build
-npm run preview
-
+```bash
+   cd frontend
+   npm install
+   npm run build
+   npm run preview
+```
 
 5. Accéder au site public via `/` et au panneau admin via `/acms-admin/` (auth obligatoire)
 
