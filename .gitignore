@@ -88,3 +88,16 @@ __mocks__/
 *.snap
 
 node_modules
+tree.md
+# Temporary files
+*.tmp
+# Backup files
+*.bak
+# IDE specific files
+*.idea/
+*.vscode/
+# System files
+.DS_Store
+# Build directories
+dist/
+build/
