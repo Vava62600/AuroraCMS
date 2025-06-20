@@ -1,0 +1,120 @@
+.text {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 0 0 1rem 0;
+}
+
+.primary {
+  color: var(--text);
+}
+
+.secondary {
+  color: var(--text-muted);
+}
+
+.disabled {
+  color: var(--input-border);
+}
+.text-muted {
+  color: var(--accent-grey);
+}
+.text-error {
+  color: var(--accent-red);
+}
+.text-success {
+  color: var(--accent-green);
+}
+.text-warning {
+  color: var(--accent-orange);
+}
+.text-accent {
+  color: var(--accent-color);
+}
+.text-accent-light {
+  color: var(--accent-color-light);
+}
+.text-accent-dark {
+  color: var(--accent-color-dark);
+}
+.text-uppercase {
+  text-transform: uppercase;
+}
+.text-lowercase {
+  text-transform: lowercase;
+}
+.text-capitalize {
+  text-transform: capitalize;
+}
+.text-italic {
+  font-style: italic;
+}
+.text-bold {
+  font-weight: 700;
+}
+.text-underline {
+  text-decoration: underline;
+}
+.text-strikethrough {
+  text-decoration: line-through;
+}
+.text-shadow {
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+.text-center {
+  text-align: center;
+}
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+.text-justify {
+  text-align: justify;
+}
+.text-no-margin {
+  margin: 0;
+}
+.text-no-padding {
+  padding: 0;
+}
+.text-border {
+  border: 1px solid var(--input-border);
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+}
+.text-border-secondary {
+  border: 1px solid var(--accent-color-light);
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+}
+.text-border-error {
+  border: 1px solid var(--accent-red);
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+}
+.text-border-success {
+  border: 1px solid var(--accent-green);
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+}
+.text-border-accent {
+    border: 1px solid var(--accent-color);
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    }
+.text-border-accent-light {
+    border: 1px solid var(--accent-color-light);
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    }
+.text-border-accent-dark {
+    border: 1px solid var(--accent-color-dark);
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    }
+.text-highlight {
+  background-color: var(--accent-blue-light);
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+}

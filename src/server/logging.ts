@@ -1,20 +1,27 @@
-import { createLogger, transports, format } from 'winston';
+import fs from 'fs';
+import path from 'path';
+import winston from 'winston';
 
-const logFormat = format.combine(
-  format.timestamp(),
-  format.errors({ stack: true }),
-  format.splat(),
-  format.json()
+const logDir = 'logs';
+if (!fs.existsSync(logDir)) fs.mkdirSync(logDir);
+
+const format = winston.format.combine(
+  winston.format.timestamp(),
+  winston.format.printf(({ timestamp, level, message }) => {
+    return `${timestamp} [${level.toUpperCase()}]: ${message}`;
+  })
 );
 
-export const debugLogger = createLogger({
-  level: 'debug',
-  format: logFormat,
-  transports: [new transports.File({ filename: 'logs/debug.log' })]
+export const logger = winston.createLogger({
+  level: 'info',
+  format,
+  transports: [
+    new winston.transports.File({ filename: path.join(logDir, 'app.log') }),
+    new winston.transports.File({ filename: path.join(logDir, 'security.log'), level: 'warn' }),
+    new winston.transports.Console()
+  ],
 });
 
-export const securityLogger = createLogger({
-  level: 'info',
-  format: logFormat,
-  transports: [new transports.File({ filename: 'logs/security.log' })]
-});
+logger.stream = {
+  write: (message: string) => logger.info(message.trim()),
+};
