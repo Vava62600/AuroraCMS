@@ -1,9 +1,0 @@
-{
-  "actions": {
-    "init": "auroraInit",
-    "wp_enqueue_scripts": "auroraEnqueueScripts"
-  },
-  "filters": {
-    "the_content": "auroraContentFilter"
-  }
-}
